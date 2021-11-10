@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<div>Hello</div>
+<body>
+
+  <script>
+    window.addEventListener('beforeunload', function (e) {
+      e.preventDefault();
+      e.returnValue = '';
+      console.log('closing page');
+    });
+
+  </script>
+
+</body>
+
+</html>
